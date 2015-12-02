@@ -42,6 +42,7 @@ RCT_EXPORT_METHOD(signOut)
     }
 
     NSDictionary *body = @{
+                           @"userID": user.userID,
                            @"name": user.profile.name,
                            @"email": user.profile.email,
                            @"accessToken": user.authentication.accessToken,
